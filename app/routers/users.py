@@ -8,6 +8,8 @@ async def list_users():
 
 @users_router.get("/{user_id}")
 async def get_user_by_id(user_id: int):
-  return {"id": user_id, 
-          "name": "Ana",
-          "email": "ana@gmail.com"}
+  return {
+    "id": user_id, 
+    "name": "Ana",
+    "email": "ana@gmail.com"
+    }
